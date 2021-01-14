@@ -81,3 +81,22 @@ Pods
  - podem compartilhar volumes
 
 #################################################
+
+# Criar um pod
+$ kubectl run nginx-pod --image=nginx:latest
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Visualizar informações do pod em tempo real
+$ kubectl get pods --watch
+
+# Exibir detalhes do pod
+$ kubectl describe pod nginx-pod
+
+# Editar um pod (vai abrir um notepad com o arquido, alterar versão do ngix de - image: nginx:latest para - image: nginx:1.0)
+$ kubectl edit pod nginx-pod
+
+# Vai gerar erro de versão não encontrada
+
+#################################################
