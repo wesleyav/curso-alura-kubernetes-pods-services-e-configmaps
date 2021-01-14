@@ -359,3 +359,13 @@ $ kubectl apply -f .\portal-noticias.yaml
 # http://localhost:30001/
 
 #################################################
+
+Para saber mais: NodePort e IP's
+
+No último vídeo, definimos como variável de ambiente o endereço do sistema de notícias para o nosso portal de notícias conseguir acessá-lo. Fizemos isso utilizando o IP do node seguido da porta exposta pelo nosso NodePort, nesse caso localhost:30001.
+
+Caso tivéssemos múltiplos nodes em nosso cluster, tudo funcionaria da mesma maneira, pois as portas mapeadas pelo NodePort são compartilhadas entre os IP's de todos os nodes.
+
+Mais informações podem ser adquiridas em https://kubernetes.io/docs/concepts/services-networking/service/#nodeport.
+
+#################################################
