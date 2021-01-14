@@ -1,0 +1,45 @@
+Kubernetes é um orquestrador
+
+Cria e gerencia clusters que são compostos por uma ou mais máquinas trabalhando em conjunto 
+
+Possui recursos (resources) prontos para utilização:
+ - pod
+ - rs
+ - deploy
+ - vol
+ - hpa
+ - pv
+ - ing
+ - pvc
+ - svc
+ - sc
+ - ds
+ - quota
+
+As máquinas de um cluster podem ser:
+
+Master
+ - gerenciar o cluster
+ - manter e atualizar o estado desejado
+ - receber e executar novos comandos
+
+ - Componentes (Control Plane)
+   - api - receber e executar novos comandos (API REST)
+   - c-m - manter e atualizar o estado desejado
+   - sched - onde determinado código será executado no cluster
+   - etcd - armazena todos os dados vitais do cluster através de um banco de dados chave/valor
+
+Node
+ - executar as aplicações
+
+ - Componentes (Nodes)
+   - kubelet- executa os pods dentro dos nodes
+   - k-proxy - comunicação dentro do cluster
+
+
+Ferramenta
+kubectl - criar, ler, atualizar e remover os dados dos clusters, componentes, recursos etc.
+
+Pode ser declarativo ou imperativo, por arquivos de definição ou executar comandos.
+
+#################################################
