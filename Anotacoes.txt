@@ -159,3 +159,23 @@ $ kubectl exec -it portal-noticias -- bash
 $ curl localhost
 
 #################################################
+
+# Visualizar informações com saída formatada em tipo wide
+$ kubectl get pods -o wide
+
+# Apagar o arquivo
+$ kubectl delete -f .\portal-noticias.yaml
+
+SVC
+ - abstrações para expor aplicações executando um ou mais pods
+ - provêem ip´s fixos para comunicação
+ - provêem um dns para um ou mais pods
+ - são capazes de fazer balanceamento de carga
+
+SVC possui 3 tipos:
+
+ - ClusterIP
+ - NodePort
+ - LoadBalancer
+
+#################################################
