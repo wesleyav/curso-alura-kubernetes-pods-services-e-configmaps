@@ -216,3 +216,30 @@ $ kubectl apply -f .\svc-pod-2.yaml
 $ kubectl get pods -o wide
 
 #################################################
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-pod-1.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-pod-2.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\pod-1.yaml
+
+# Visualizar informações do svc
+$ kubectl get svc
+
+# Verificar se tudo que está dentro do pod está funcionando de forma correta:
+# kubectl exec -it nomo-do-pod -- bash
+$ kubectl exec -it portal-noticias -- bash
+
+# Enviar uma requisição para o NodePort
+$ curl localhost 10.104.53.142:80
+
+# Visualizar informações com saída formatada em tipo wide
+$ kubectl get nodes -o wide
+
+# Acessar no navegador
+# http://localhost:32529/
+
+#################################################
