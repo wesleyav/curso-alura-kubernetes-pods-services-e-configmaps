@@ -179,3 +179,40 @@ SVC possui 3 tipos:
  - LoadBalancer
 
 #################################################
+
+# Aplicar o arquivo
+$ kubectl apply -f .\pod-1.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\pod-2.yaml
+
+# Exibir detalhes do pod
+$ kubectl describe pod nome-do-pod
+$ kubectl describe pod pod-2
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-pod-2.yaml
+
+# Visualizar informações do svc
+$ kubectl get svc
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Verificar se tudo que está dentro do pod está funcionando de forma correta:
+# kubectl exec -it nomo-do-pod -- bash
+$ kubectl exec -it pod-1 -- bash
+
+# Enviar uma requisição para o svc-pod-2
+$ curl localhost 10.100.224.84:80
+
+# Apagar o arquivo
+$ kubectl delete -f .\pod-2.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-pod-2.yaml
+
+# Visualizar informações com saída formatada em tipo wide
+$ kubectl get pods -o wide
+
+#################################################
