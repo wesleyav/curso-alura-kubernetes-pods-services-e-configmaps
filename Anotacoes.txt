@@ -55,3 +55,19 @@ Pode ser declarativo ou imperativo, por arquivos de definição ou executar coma
 $ kubectl get nodes
 
 #################################################
+
+# Instalando no Linux
+
+# Seguir os passos em:
+
+# Kubernetes
+# kubernetes.io/docs/tasks/tools/install-kubectl/
+
+# Minikube
+# kubernetes.io/docs/tasks/tools/install-minikube/
+
+# Virtualbox
+# virtualbox.org/wiki/Linux_Downloads
+# Versão 6.1.12
+
+#################################################
