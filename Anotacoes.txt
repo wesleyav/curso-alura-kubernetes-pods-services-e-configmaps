@@ -263,3 +263,17 @@ $ kubectl apply -f .\svc-portal-noticias.yaml
 # http://localhost:30000/
 
 #################################################
+
+# Aplicar o arquivo
+$ kubectl apply -f .\sistema-noticias.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-sistema-noticias.yaml
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Acessar no navegador
+# http://localhost:30001/
+
+#################################################
