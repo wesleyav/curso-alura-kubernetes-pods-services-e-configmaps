@@ -277,3 +277,21 @@ $ kubectl get pods
 # http://localhost:30001/
 
 #################################################
+
+# Aplicar o arquivo
+$ kubectl apply -f .\db-noticias.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-db-noticias.yaml
+
+# Visualizar informações dos serviços
+$ kubectl get svc
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Exibir detalhes do pod
+$ kubectl describe pods nome-do-pod
+$ kubectl describe pods db-noticias
+
+#################################################
