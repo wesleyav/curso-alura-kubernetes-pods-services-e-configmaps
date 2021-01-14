@@ -313,3 +313,14 @@ $ kubectl exec -it db-noticias -- bash
 $ mysql -u root -p
 
 #################################################
+
+# Aplicar o arquivo
+$ kubectl apply -f .\db-configmap.yaml
+
+# Exibir o configmap
+$ kubectl get configmap
+
+# Exibir e descrever o configmap
+$ kubectl describe configmap db-configmap
+
+#################################################
