@@ -100,3 +100,22 @@ $ kubectl edit pod nginx-pod
 # Vai gerar erro de versão não encontrada
 
 #################################################
+
+# Criar a pasta Kubernetes-Alura
+# Dentro dela criar o arquivo primeiro-pod.yaml
+
+# Acessar essa pasta no Power Shell
+
+# Aplicar o arquivo
+$ kubectl apply -f .\primeiro-pod.yaml
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Visualizar informações do pod em tempo real
+$ kubectl get pods --watch
+
+# Exibir detalhes do pod
+$ kubectl describe pod nginx-pod
+
+#################################################
