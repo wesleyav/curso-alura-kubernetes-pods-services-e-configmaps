@@ -243,3 +243,23 @@ $ kubectl get nodes -o wide
 # http://localhost:32529/
 
 #################################################
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Remover todos os pods
+$ kubectl delete pods --all
+
+# Remover todos os serviços
+$ kubectl delete svc --all
+
+# Aplicar o arquivo
+$ kubectl apply -f .\portal-noticias.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\svc-portal-noticias.yaml
+
+# Acessar no navegador
+# http://localhost:30000/
+
+#################################################
