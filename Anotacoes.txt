@@ -43,3 +43,15 @@ kubectl - criar, ler, atualizar e remover os dados dos clusters, componentes, re
 Pode ser declarativo ou imperativo, por arquivos de definição ou executar comandos.
 
 #################################################
+
+# Donwload do Docker for Windows 2.3.3.2
+# https://desktop.docker.com/win/edge/46784/Docker%20Desktop%20Installer.exe
+
+# Abrir o docker e em configurações ativar a opção "kubernetes".
+
+# Abrir o PowerShell
+
+# Visualizar informações do cluster
+$ kubectl get nodes
+
+#################################################
