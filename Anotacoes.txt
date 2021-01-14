@@ -295,3 +295,21 @@ $ kubectl describe pods nome-do-pod
 $ kubectl describe pods db-noticias
 
 #################################################
+
+# Apagar o pod
+$ kubectl delete pod db-noticias
+
+# Aplicar o arquivo
+$ kubectl apply -f .\db-noticias.yaml
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Verificar se tudo que está dentro do pod está funcionando de forma correta:
+# kubectl exec -it nomo-do-pod -- bash
+$ kubectl exec -it db-noticias -- bash
+
+# Acessar banco MySQL
+$ mysql -u root -p
+
+#################################################
