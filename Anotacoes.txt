@@ -119,3 +119,11 @@ $ kubectl get pods --watch
 $ kubectl describe pod nginx-pod
 
 #################################################
+
+Para saber mais: Validando YAML
+
+Caso enfrente dificuldades para criação do YAML e alguns erros de validação estejam aparecendo, além de recorrer ao fórum, você também pode utilizar o validador do site kubeyaml para te auxiliar com os possíveis erros e validações do seu arquivo.	
+
+https://kubeyaml.com/
+
+#################################################
