@@ -127,3 +127,35 @@ Caso enfrente dificuldades para criação do YAML e alguns erros de validação 
 https://kubeyaml.com/
 
 #################################################
+
+# Parar pod criado de forma interativa
+# kubectl delete pod + nome
+$ kubectl delete pod nginx-pod
+
+# Visualizar informações do pod
+$ kubectl get pods
+
+# Parar pod criado de forma declarativa
+# kubectl delete -f + nome
+$ kubectl delete -f .\primeiro-pod.yaml
+
+# Criar na pasta Kubernetes-Alura o arquivo portal-noticias.yaml
+
+# Aplicar o arquivo
+$ kubectl apply -f .\portal-noticias.yaml
+
+# Visualizar informações do pod em tempo real
+$ kubectl get pods --watch
+
+# Exibir detalhes do pod
+$ kubectl describe pod nome-do-pod
+$ kubectl describe pod portal-noticias
+
+# Verificar se tudo que está dentro do pod está funcionando de forma correta:
+# kubectl exec -it nomo-do-pod -- bash
+$ kubectl exec -it portal-noticias -- bash
+
+# Enviar uma requisição para o localhost
+$ curl localhost
+
+#################################################
