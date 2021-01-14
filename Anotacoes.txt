@@ -71,3 +71,13 @@ $ kubectl get nodes
 # Versão 6.1.12
 
 #################################################
+
+Pods
+ - cápsula que pode conter um ou mais containers
+ - possui ip atribuído
+ - compartilha ip no pod, porta diferente para cada container
+ - pods são efêmeros
+ - compartilham namespaces de rede e IPC
+ - podem compartilhar volumes
+
+#################################################
